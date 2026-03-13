@@ -65,7 +65,7 @@ Outils / environnements :
 ## PROJETS REALISES
 ----------------
 
-Projet 1 : Manipulation de polynômes en R (2023) [voir le projet]
+Projet 1 : Manipulation de polynômes en R (2023) [voir le projet](https://github.com/Ferati0/projet_R_polynome)
 
 Contexte :
   Réalisation d’un module en langage R permettant de représenter, manipuler et exploiter mathématiquement des polynômes à partir d’une représentation dense par vecteur.
