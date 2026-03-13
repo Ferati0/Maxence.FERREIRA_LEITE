@@ -235,6 +235,10 @@
       padding: 22px;
       position: relative;
       overflow: hidden;
+      min-height: 420px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .hero-panel::before {
@@ -247,42 +251,19 @@
       pointer-events: none;
     }
 
-    .terminal {
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid rgba(159, 178, 201, 0.14);
-      background: rgba(4, 10, 18, 0.88);
+    .profile-photo {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 32px;
+      border: 3px solid rgba(34, 211, 238, 0.85);
+      box-shadow:
+        0 0 0 8px rgba(34, 211, 238, 0.05),
+        0 20px 40px rgba(0,0,0,0.35);
+      position: relative;
+      z-index: 1;
+      background: #0b1220;
     }
-
-    .terminal-top {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 14px;
-      border-bottom: 1px solid rgba(159, 178, 201, 0.1);
-      background: rgba(255,255,255,0.02);
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-    }
-
-    .dot.red { background: #fb7185; }
-    .dot.yellow { background: #fbbf24; }
-    .dot.green { background: #34d399; }
-
-    .terminal-body {
-      padding: 18px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      color: #d5e4f5;
-      font-size: 0.94rem;
-      line-height: 1.9;
-    }
-
-    .cmd { color: var(--accent); }
-    .info { color: var(--primary); }
 
     section {
       padding: 28px 0;
@@ -485,6 +466,15 @@
         flex-direction: column;
         align-items: start;
       }
+
+      .hero-panel {
+        min-height: auto;
+      }
+
+      .profile-photo {
+        width: 260px;
+        height: 260px;
+      }
     }
 
     @media (max-width: 720px) {
@@ -500,6 +490,12 @@
 
       .hero {
         padding-top: 52px;
+      }
+
+      .profile-photo {
+        width: 220px;
+        height: 220px;
+        border-radius: 24px;
       }
     }
   </style>
@@ -559,25 +555,7 @@
         </div>
 
         <div class="card hero-panel">
-          <div class="terminal">
-            <div class="terminal-top">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <div class="terminal-body">
-              <div><span class="cmd">$ whoami</span></div>
-              <div class="info">maxence_ferreira_leite</div>
-              <div><span class="cmd">$ current_path</span></div>
-              <div>Bachelor Cybersécurité - Ynov Sophia Antipolis</div>
-              <div><span class="cmd">$ interests</span></div>
-              <div>Linux / Réseaux / Sécurité / TryHackMe</div>
-              <div><span class="cmd">$ long_term_goal</span></div>
-              <div>Mastère Expert Cybersécurité → M2 UBiNet</div>
-              <div><span class="cmd">$ status</span></div>
-              <div>Disponible pour alternance 2026/2027</div>
-            </div>
-          </div>
+          <img src="images/photo.jpg" alt="Photo de Maxence Ferreira Leite" class="profile-photo" />
         </div>
       </div>
     </div>
