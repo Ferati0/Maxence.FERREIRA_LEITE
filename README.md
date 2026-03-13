@@ -101,7 +101,7 @@ Compétences développées :
   - représentation de données mathématiques
 
 
-Projet 2 : Convertisseur de bases et système bibi-binaire en R (2023) [voir le projet]
+Projet 2 : Convertisseur de bases et système bibi-binaire en R (2023) [voir le projet](https://github.com/Ferati0/projet-R_ShinyBinare)
 
 Contexte :
   Développement d’une application en R permettant de convertir des entiers entre plusieurs systèmes de numération, avec une interface interactive réalisée à l’aide du        framework Shiny.
