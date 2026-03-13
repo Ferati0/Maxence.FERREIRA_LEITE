@@ -341,7 +341,7 @@ Nom        : FERREIRA LEITE Maxence
 Email      : maxence.ferreiraleite@hotmail.com
 Téléphone  : 06 19 20 46 67
 LinkedIn   : www.linkedin.com/in/maxence-ferreira-leite
-GitHub     :
+GitHub     : https://github.com/Ferati0/Maxence.FERREIRA_LEITE
 
 Informations complémentaires :
   - Permis B
