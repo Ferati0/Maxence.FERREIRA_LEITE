@@ -9,14 +9,14 @@ FERREIRA LEITE Maxence -Portfolio Informatique – Cybersécurité
 
 Étudiant en 3ème année de Bachelor Cybersécurité à Ynov Campus Sophia Antipolis pour l'année 2026/2027, je construis progressivement un profil orienté sécurité des systèmes, administration réseaux et développement d’outils techniques.
 
-Mon parcours associe une base universitaire en Licence Sciences et Technologies avec une spécialisation en informatique et intelligence artificielle, puis une orientation professionnelle vers la cybersécurité. Cette double approche me permet d’avoir à la fois une vision logique et algorithmique des problèmes, ainsi qu’un intérêt concret pour les infrastructures, les réseaux et la sécurisation des environnements techniques.
+Mon parcours associe une base universitaire en Licence Sciences et Technologies avec une spécialisation en informatique et intelligence artificielle, puis une orientation professionnelle vers la cybersécurité. 
 
 Je développe mes compétences à travers :
   - des projets académiques en programmation et systèmes
   - des exercices pratiques en environnement Linux
   - la progression sur des plateformes de cybersécurité comme TryHackMe
 
-Sérieux, discipliné et curieux, je recherche une alternance me permettant de rejoindre une équipe technique, de monter rapidement en compétences et de contribuer à des missions concrètes en cybersécurité, systèmes ou réseaux.
+Sérieux, discipliné et curieux, je recherche une alternance me permettant de rejoindre une équipe technique, de monter en compétences et de contribuer à des missions concrètes en cybersécurité, systèmes ou réseaux.
 
 À moyen et long terme, mon objectif est de poursuivre une trajectoire cohérente vers un Mastère expert en cybersécurité à Ynov campus, avec une ambition académique clairement définie : préparer un dossier solide pour une candidature en Master 2 Informatique Réseaux, parcours UBiNet, à l’Université Côte d’Azur. Mon parcours vise à avoir des compétences solides à la fois professionnel et théorique.
 
@@ -40,7 +40,6 @@ Programmation :
 Compétences associées :
   - structuration modulaire de programmes
   - algorithmique
-  - manipulation de données
   - scripting
   - logique de développement orientée outils techniques
 
@@ -49,7 +48,6 @@ Systèmes :
   - Windows
   - utilisation de la ligne de commande
   - gestion des fichiers et permissions
-  - exécution de scripts
   - notions de virtualisation et d’environnements de test (utilisation de UTM)
 
 Réseaux :
@@ -62,15 +60,7 @@ Outils / environnements :
   - terminal Linux
   - Python pour scripting
   - R / R Shiny
-  - environnements virtualisés
   - plateformes d’apprentissage cybersécurité (tryhackme)
-
-Qualités techniques en développement :
-  - autonomie dans l’apprentissage
-  - capacité à documenter un projet
-  - progression continue sur des sujets techniques
-  - volonté d’approfondir l’administration système et la cybersécurité réseau
-
 
 ## PROJETS REALISES
 ----------------
@@ -195,34 +185,6 @@ Compétences développées :
   - logique de synchronisation
   - structuration d’un projet technique plus complet
 
-
-## PROJETS EN COURS
-----------------
-
-Je poursuis actuellement le développement de projets plus directement orientés cybersécurité, systèmes et réseaux, avec une logique de progression continue.
-
-Travaux en cours :
-  - développement de scripts Python orientés cybersécurité
-  - mise en place d’un home lab Linux pour expérimenter différents cas d’usage techniques
-  - exercices pratiques réseau et administration systèmes
-  - progression sur des plateformes comme TryHackMe
-  - renforcement des bases utiles pour des projets futurs plus spécialisés
-
-Axes de progression ciblés :
-  - automatisation de tâches techniques via scripting
-  - meilleure maîtrise de l’environnement Linux
-  - approfondissement des bases réseaux
-  - observation et analyse du trafic réseau
-  - compréhension progressive des mécanismes de détection d’intrusions
-
-Perspective de projets futurs :
-  - projets personnels en sécurité réseau
-  - expérimentations autour de la détection d’intrusions
-  - travaux mêlant cybersécurité et analyse de données
-  - montée en compétence vers des sujets à dimension plus académique, notamment en lien avec les réseaux et l’apprentissage automatique ("Détection d’intrusions réseau basée sur l’apprentissage automatique :
-comparaison de modèles et analyse de performance"
-
-
 ## EXPERIENCE PROFESSIONNELLE
 ---------------------------
 
@@ -233,13 +195,10 @@ Missions :
   - interventions sur différents chantiers
   - participation à des travaux variés : plaquiste, maçonnerie, carrelage, couverture, peinture
   - accompagnement et formation de nouvelles recrues
-  - application des procédures et respect des normes de sécurité
 
 Apports :
   - sens du travail en équipe
   - adaptation rapide à différents contextes
-  - rigueur sur les consignes
-  - sens des responsabilités
   - capacité à transmettre des consignes techniques
 
 
@@ -249,17 +208,13 @@ Juillet 2023 à mai 2024
 Missions :
   - gestion des commandes
   - maintien d’un service client de qualité
-  - participation à la réception
   - formation des nouvelles recrues
-  - travail dans un environnement à forte intensité
 
 Apports :
   - efficacité en situation de pression
   - réactivité
   - organisation
-  - respect des procédures
-  - capacité à travailler avec cadence et précision
-
+    
 
 Juge-arbitre de tennis – All In Tennis Academy
 2022 à 2024
@@ -267,16 +222,12 @@ Juge-arbitre de tennis – All In Tennis Academy
 Missions :
   - planification et gestion logistique de compétitions
   - gestion des plannings
-  - coordination des participants
   - médiation en cas de litiges ou tensions
 
 Apports :
   - sens de l’organisation
   - gestion de situations conflictuelles
   - prise de décision
-  - sérieux
-  - responsabilité
-
 
 Éducateur tennis – All In Tennis Academy (Stage)
 2022 à 2023
@@ -290,7 +241,6 @@ Apports :
   - pédagogie
   - communication
   - capacité d’encadrement
-  - patience
   - adaptation à différents profils
 
 
@@ -343,7 +293,6 @@ Apports :
   - culture de la discipline
   - rigueur
   - capacité d’adaptation
-  - intérêt renforcé pour les systèmes d’information et de communication
   - capacités à commander
 
 
@@ -351,7 +300,7 @@ Certifications / formation complémentaire / progression visée
   - pratique sur TryHackMe
   - montée en compétence progressive en réseaux et sécurité
   - intérêt pour des formations complémentaires de type réseaux / cybersécurité
-  - volonté de renforcer le profil par des projets documentés, des labs et des apprentissages parallèles
+  - volonté de renforcer le profil par des projets documentés, des labs et des apprentissages parallèles (passer les certifiactions comme le ccna ou compTIA secure+ pendant l'année 2026/2027)
 
 
 Projection académique à moyen et long terme
@@ -366,8 +315,6 @@ Projection académique à moyen et long terme
 
   - Discipline
   - Organisation
-  - Réactivité
-  - Curiosité
   - Persévérance
   - Esprit d’équipe
   - Capacité d’apprentissage
