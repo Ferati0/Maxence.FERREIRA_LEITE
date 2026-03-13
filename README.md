@@ -65,7 +65,7 @@ Outils / environnements :
 ## PROJETS REALISES
 ----------------
 
-Projet 1 : Manipulation de polynômes en R (2023)
+Projet 1 : Manipulation de polynômes en R (2023) [voir le projet]
 
 Contexte :
   Réalisation d’un module en langage R permettant de représenter, manipuler et exploiter mathématiquement des polynômes à partir d’une représentation dense par vecteur.
@@ -101,7 +101,7 @@ Compétences développées :
   - représentation de données mathématiques
 
 
-Projet 2 : Convertisseur de bases et système bibi-binaire en R (2023)
+Projet 2 : Convertisseur de bases et système bibi-binaire en R (2023) [voir le projet]
 
 Contexte :
   Développement d’une application en R permettant de convertir des entiers entre plusieurs systèmes de numération, avec une interface interactive réalisée à l’aide du        framework Shiny.
@@ -133,7 +133,7 @@ Compétences développées :
   - logique de représentation de l’information
 
 
-Projet 3 : Mini rsync – Projet système Linux (2023, modifié en 2024, projet de groupe)
+Projet 3 : Mini rsync – Projet système Linux (2023, modifié en 2024, projet de groupe) [voir le projet](https://github.com/Ferati0/mini-rsync)
 
 Contexte :
   Développement d’une version simplifiée de l’outil Unix rsync en Python afin de comprendre concrètement les mécanismes de synchronisation de fichiers, la logique d’échange entre processus et la communication client / serveur.
