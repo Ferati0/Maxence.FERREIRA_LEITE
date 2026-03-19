@@ -339,7 +339,7 @@ Le sport occupe une place importante dans mon parcours personnel. Il m’a permi
 
 Nom        : FERREIRA LEITE Maxence
 Email      : maxence.ferreiraleite@hotmail.com
-Téléphone  : 06 19 20 46 67
+Téléphone  : 06 73 75 36 17
 LinkedIn   : www.linkedin.com/in/maxence-ferreira-leite
 GitHub     : https://github.com/Ferati0/Maxence.FERREIRA_LEITE
 
