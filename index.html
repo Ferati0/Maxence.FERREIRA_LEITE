@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Maxence Ferreira Leite</title>
-  <meta name="description" content="Portfolio cybersécurité de Maxence Ferreira Leite - Étudiant en Bachelor Cybersécurité, recherche alternance en cybersécurité / SOC." />
+  <meta name="description" content="Portfolio de Maxence Ferreira Leite, alternant cybersécurité et systèmes/réseaux, étudiant en Bachelor Cybersécurité à Ynov Campus Sophia Antipolis." />
   <style>
     :root {
       --bg: #07111f;
       --bg-soft: #0d1b2d;
-      --card: rgba(13, 27, 45, 0.74);
+      --card: rgba(13, 27, 45, 0.76);
       --card-border: rgba(96, 165, 250, 0.18);
       --text: #e6edf7;
       --muted: #9fb2c9;
@@ -22,15 +22,8 @@
       --max-width: 1220px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -44,20 +37,11 @@
       min-height: 100vh;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(var(--max-width), calc(100% - 32px));
-      margin: 0 auto;
-    }
+    a { text-decoration: none; color: inherit; }
+    .container { width: min(var(--max-width), calc(100% - 32px)); margin: 0 auto; }
 
     .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      position: sticky; top: 0; z-index: 100;
       backdrop-filter: blur(14px);
       background: rgba(5, 12, 22, 0.72);
       border-bottom: 1px solid rgba(159, 178, 201, 0.12);
@@ -65,455 +49,116 @@
 
     .nav-inner {
       width: min(var(--max-width), calc(100% - 32px));
-      margin: 0 auto;
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      margin: 0 auto; min-height: 74px;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
-
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: 0.3px; }
     .brand-badge {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
+      width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center;
       background: linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(96, 165, 250, 0.18));
-      border: 1px solid rgba(96, 165, 250, 0.22);
-      color: var(--primary);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      border: 1px solid rgba(96, 165, 250, 0.22); color: var(--primary);
     }
 
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      font-size: 0.95rem;
-      transition: 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
+    .nav-links { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: 0.95rem; transition: 0.2s ease; }
+    .nav-links a:hover { color: var(--text); }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px 18px;
-      border-radius: 14px;
-      font-weight: 600;
-      transition: 0.25s ease;
-      border: 1px solid transparent;
-      cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 12px 18px; border-radius: 14px; font-weight: 600;
+      transition: 0.25s ease; border: 1px solid transparent; cursor: pointer;
     }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #02111f; box-shadow: 0 14px 34px rgba(34, 211, 238, 0.18); }
+    .btn-primary:hover, .btn-secondary:hover { transform: translateY(-2px); }
+    .btn-secondary { background: rgba(255,255,255,0.02); border-color: rgba(159,178,201,0.16); color: var(--text); }
+    .btn-secondary:hover { background: rgba(255,255,255,0.04); border-color: rgba(96,165,250,0.28); }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #02111f;
-      box-shadow: 0 14px 34px rgba(34, 211, 238, 0.18);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 18px 40px rgba(34, 211, 238, 0.26);
-    }
-
-    .btn-secondary {
-      background: rgba(255,255,255,0.02);
-      border-color: rgba(159, 178, 201, 0.16);
-      color: var(--text);
-    }
-
-    .btn-secondary:hover {
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.04);
-      border-color: rgba(96, 165, 250, 0.28);
-    }
-
-    .hero {
-      padding: 90px 0 56px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
-      align-items: center;
-    }
-
+    .hero { padding: 90px 0 56px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 28px; align-items: center; }
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--primary);
-      background: rgba(34, 211, 238, 0.08);
-      border: 1px solid rgba(34, 211, 238, 0.18);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 0.92rem;
-      margin-bottom: 18px;
+      display: inline-flex; align-items: center; gap: 10px; color: var(--primary);
+      background: rgba(34, 211, 238, 0.08); border: 1px solid rgba(34,211,238,0.18);
+      border-radius: 999px; padding: 8px 14px; font-size: 0.92rem; margin-bottom: 18px;
     }
+    .hero h1 { font-size: clamp(2.4rem, 5vw, 4.7rem); line-height: 1.05; margin-bottom: 18px; letter-spacing: -0.04em; }
+    .gradient { background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 760px; margin-bottom: 24px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 26px; }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 
-    .hero h1 {
-      font-size: clamp(2.4rem, 5vw, 4.7rem);
-      line-height: 1.05;
-      margin-bottom: 18px;
-      letter-spacing: -0.04em;
+    .card, .stat-card, .project-card, .timeline-card, .contact-card {
+      background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); box-shadow: var(--shadow); backdrop-filter: blur(14px);
     }
+    .stat-card { padding: 18px; }
+    .stat-label { color: var(--muted); font-size: 0.92rem; margin-bottom: 6px; }
+    .stat-value { font-size: 1.3rem; font-weight: 700; }
 
-    .gradient {
-      background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .hero p {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 760px;
-      margin-bottom: 24px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 26px;
-    }
-
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .card,
-    .stat-card,
-    .project-card,
-    .timeline-card,
-    .contact-card {
-      background: var(--card);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(14px);
-    }
-
-    .stat-card {
-      padding: 18px;
-    }
-
-    .stat-label {
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin-bottom: 6px;
-    }
-
-    .stat-value {
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-
-    .hero-panel {
-      padding: 22px;
-      position: relative;
-      overflow: hidden;
-      min-height: 420px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: auto -20px -20px auto;
-      width: 190px;
-      height: 190px;
-      background: radial-gradient(circle, rgba(34, 211, 238, 0.18), transparent 70%);
-      pointer-events: none;
-    }
-
+    .hero-panel { padding: 22px; min-height: 420px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; }
+    .hero-panel::before { content: ""; position: absolute; right: -20px; bottom: -20px; width: 190px; height: 190px; background: radial-gradient(circle, rgba(34,211,238,0.18), transparent 70%); }
     .profile-photo {
-      width: 320px;
-      height: 320px;
-      object-fit: cover;
-      border-radius: 32px;
-      border: 3px solid rgba(34, 211, 238, 0.85);
-      box-shadow:
-        0 0 0 8px rgba(34, 211, 238, 0.05),
-        0 20px 40px rgba(0,0,0,0.35);
-      position: relative;
-      z-index: 1;
-      background: #0b1220;
+      width: 320px; height: 320px; object-fit: cover; border-radius: 32px;
+      border: 3px solid rgba(34,211,238,0.85);
+      box-shadow: 0 0 0 8px rgba(34,211,238,0.05), 0 20px 40px rgba(0,0,0,0.35);
+      position: relative; z-index: 1; background: #0b1220;
     }
 
-    section {
-      padding: 28px 0;
-    }
+    section { padding: 28px 0; }
+    .section-title { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+    .section-title h2 { font-size: clamp(1.6rem, 3vw, 2.5rem); letter-spacing: -0.03em; }
+    .section-title p { color: var(--muted); max-width: 700px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card, .project-card, .timeline-card, .contact-card { padding: 24px; }
+    .card h3, .contact-card h3 { font-size: 1.12rem; margin-bottom: 10px; }
+    .card p, .project-card p, .project-card li, .timeline-card p, .timeline-card li, .contact-item { color: var(--muted); }
 
-    .section-title {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .tag { padding: 8px 12px; border-radius: 999px; background: rgba(96,165,250,0.09); border: 1px solid rgba(96,165,250,0.16); color: #cfe3ff; font-size: 0.9rem; }
+    .tag.green { background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.18); color: #b8f7dc; }
 
-    .section-title h2 {
-      font-size: clamp(1.6rem, 3vw, 2.5rem);
-      letter-spacing: -0.03em;
-    }
+    .project-card { display: flex; flex-direction: column; gap: 14px; min-height: 100%; }
+    .project-top { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+    .project-top h3 { font-size: 1.16rem; }
+    .project-badge { white-space: nowrap; padding: 8px 12px; border-radius: 999px; background: rgba(52,211,153,0.1); color: var(--accent); border: 1px solid rgba(52,211,153,0.18); font-size: 0.84rem; font-weight: 600; }
+    ul { padding-left: 18px; }
+    li + li { margin-top: 8px; }
+    .project-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: auto; padding-top: 6px; }
 
-    .section-title p {
-      color: var(--muted);
-      max-width: 700px;
-    }
+    .timeline { display: grid; gap: 16px; }
+    .period { color: var(--primary); font-size: 0.92rem; margin-bottom: 8px; font-weight: 600; }
+    .timeline-card h3 { margin-bottom: 8px; }
+    .timeline-card ul { margin-top: 10px; }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      padding: 24px;
-    }
-
-    .card h3 {
-      font-size: 1.12rem;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: var(--muted);
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .tag {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(96, 165, 250, 0.09);
-      border: 1px solid rgba(96, 165, 250, 0.16);
-      color: #cfe3ff;
-      font-size: 0.9rem;
-    }
-
-    .project-card {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      min-height: 100%;
-    }
-
-    .project-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: start;
-    }
-
-    .project-top h3 {
-      font-size: 1.16rem;
-    }
-
-    .project-badge {
-      white-space: nowrap;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(52, 211, 153, 0.1);
-      color: var(--accent);
-      border: 1px solid rgba(52, 211, 153, 0.18);
-      font-size: 0.84rem;
-      font-weight: 600;
-    }
-
-    .project-card p,
-    .project-card li {
-      color: var(--muted);
-    }
-
-    .project-card ul {
-      padding-left: 18px;
-    }
-
-    .project-card li + li {
-      margin-top: 8px;
-    }
-
-    .project-links {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: auto;
-      padding-top: 6px;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 16px;
-    }
-
-    .timeline-card {
-      padding: 22px;
-    }
-
-    .timeline-card .period {
-      color: var(--primary);
-      font-size: 0.92rem;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    .timeline-card h3 {
-      margin-bottom: 8px;
-    }
-
-    .timeline-card p,
-    .timeline-card li {
-      color: var(--muted);
-    }
-
-    .timeline-card ul {
-      padding-left: 18px;
-      margin-top: 10px;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .contact-card {
-      padding: 24px;
-    }
-
-    .contact-list {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    .contact-item {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      color: var(--muted);
-    }
-
-    .contact-item strong {
-      color: var(--text);
-      min-width: 96px;
-    }
-
-    footer {
-      padding: 34px 0 56px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    .divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(159, 178, 201, 0.24), transparent);
-      margin: 12px 0 8px;
-    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .contact-list { display: grid; gap: 12px; margin-top: 16px; }
+    .contact-item { display: flex; flex-wrap: wrap; gap: 8px; }
+    .contact-item strong { color: var(--text); min-width: 96px; }
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(159,178,201,0.24), transparent); margin: 18px 0; }
+    footer { padding: 34px 0 56px; color: var(--muted); font-size: 0.95rem; text-align: center; }
 
     @media (max-width: 1024px) {
-      .hero-grid,
-      .grid-2,
-      .grid-3,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title {
-        flex-direction: column;
-        align-items: start;
-      }
-
-      .hero-panel {
-        min-height: auto;
-      }
-
-      .profile-photo {
-        width: 260px;
-        height: 260px;
-      }
+      .hero-grid, .grid-2, .grid-3, .contact-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .section-title { flex-direction: column; align-items: start; }
+      .hero-panel { min-height: auto; }
+      .profile-photo { width: 260px; height: 260px; }
     }
 
     @media (max-width: 720px) {
-      .nav-inner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 14px 0;
-      }
-
-      .nav-links {
-        justify-content: center;
-      }
-
-      .hero {
-        padding-top: 52px;
-      }
-
-      .profile-photo {
-        width: 220px;
-        height: 220px;
-        border-radius: 24px;
-      }
+      .nav-inner { flex-direction: column; justify-content: center; padding: 14px 0; }
+      .nav-links { justify-content: center; }
+      .hero { padding-top: 52px; }
+      .profile-photo { width: 220px; height: 220px; border-radius: 24px; }
     }
   </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="nav-inner">
-      <a href="#top" class="brand">
-        <span class="brand-badge">🛡️</span>
-        <span>Maxence Ferreira Leite</span>
-      </a>
+      <a href="#top" class="brand"><span class="brand-badge">🛡️</span><span>Maxence Ferreira Leite</span></a>
       <div class="nav-links">
-        <a href="#profil">Profil</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#experience">Expérience</a>
-        <a href="#formation">Formation</a>
-        <a href="#contact">Contact</a>
+        <a href="#profil">Profil</a><a href="#competences">Compétences</a><a href="#projets">Projets</a><a href="#experience">Expérience</a><a href="#formation">Formation</a><a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -522,41 +167,25 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">🔎 Recherche alternance cybersécurité / systèmes / réseaux</div>
-          <h1>
-            Portfolio <span class="gradient">Cybersécurité</span><br />
-            Maxence Ferreira Leite
-          </h1>
+          <div class="eyebrow">🔎 Recherche alternance cybersécurité / systèmes & réseaux</div>
+          <h1>Alternant <span class="gradient">Cybersécurité</span><br />& systèmes/réseaux</h1>
           <p>
             Étudiant en 3ème année de Bachelor Cybersécurité à Ynov Campus Sophia Antipolis,
-            je développe progressivement un profil orienté sécurité des systèmes,
-            administration réseaux et outils techniques. Mon objectif est d’intégrer
-            une alternance me permettant de monter en compétences et de contribuer
-            concrètement à une équipe technique.
+            je recherche une alternance de 12 mois en cybersécurité, administration systèmes et réseaux.
+            Je m’intéresse particulièrement à Linux, aux infrastructures réseau, à l’analyse de trafic et aux outils de sécurité.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projets">Voir mes projets</a>
             <a class="btn btn-secondary" href="#contact">Me contacter</a>
+            <a class="btn btn-secondary" href="CV_FerreiraLeite_Maxence_IA&cybersecurity.pdf" target="_blank">Télécharger mon CV</a>
           </div>
           <div class="hero-stats">
-            <div class="stat-card">
-              <div class="stat-label">Objectif</div>
-              <div class="stat-value">Alternance cyber</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Spécialité</div>
-              <div class="stat-value">Systèmes & Réseaux</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Rythme</div>
-              <div class="stat-value">1 semaine / 2 semaines</div>
-            </div>
+            <div class="stat-card"><div class="stat-label">Objectif</div><div class="stat-value">Alternance cyber</div></div>
+            <div class="stat-card"><div class="stat-label">Rythme</div><div class="stat-value">1 sem. école / 2 sem. entreprise</div></div>
+            <div class="stat-card"><div class="stat-label">Durée</div><div class="stat-value">12 mois</div></div>
           </div>
         </div>
-
-        <div class="card hero-panel">
-          <img src="photocv.jpg" alt="Photo de Maxence Ferreira Leite" class="profile-photo" />
-        </div>
+        <div class="card hero-panel"><img src="photocv.jpg" alt="Photo de Maxence Ferreira Leite" class="profile-photo" /></div>
       </div>
     </div>
   </header>
@@ -564,44 +193,16 @@
   <main>
     <section id="profil">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Profil</h2></div>
-          <p>
-            Un profil en construction, combinant une base universitaire en informatique
-            et intelligence artificielle avec une orientation progressive vers la cybersécurité.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Profil</h2><p>Un profil technique en construction, entre informatique, IA, systèmes, réseaux et cybersécurité.</p></div>
         <div class="grid-2">
           <div class="card">
             <h3>Présentation</h3>
-            <p>
-              Mon parcours associe une base universitaire en Licence Sciences et Technologies
-              avec une spécialisation en informatique et intelligence artificielle,
-              puis une orientation professionnelle vers la cybersécurité.
-            </p>
-            <div class="tags">
-              <span class="tag">Cybersécurité</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Réseaux</span>
-              <span class="tag">Python</span>
-              <span class="tag">TryHackMe</span>
-            </div>
+            <p>Mon parcours associe une Licence Sciences et Technologies spécialisée en informatique et IA, un DEUG obtenu en 2024, puis une spécialisation vers la cybersécurité et l’administration systèmes/réseaux.</p>
+            <div class="tags"><span class="tag">Cybersécurité</span><span class="tag">Linux</span><span class="tag">Réseaux</span><span class="tag">IA / Machine Learning</span><span class="tag">TryHackMe</span></div>
           </div>
-
           <div class="card">
             <h3>Objectif professionnel</h3>
-            <p>
-              Sérieux, discipliné et curieux, je recherche une alternance me permettant
-              de rejoindre une équipe technique, de monter en compétences et de contribuer
-              à des missions concrètes en cybersécurité, systèmes ou réseaux.
-            </p>
-            <div class="divider"></div>
-            <p>
-              À moyen et long terme, mon objectif est de poursuivre vers un Mastère Expert
-              en cybersécurité à Ynov, puis de préparer un dossier solide pour une candidature
-              en Master 2 Informatique Réseaux, parcours UBiNet, à l’Université Côte d’Azur.
-            </p>
+            <p>Sérieux, discipliné, curieux et organisé, je souhaite intégrer une équipe technique afin de progresser sur des missions concrètes : administration Linux/Windows, réseau, supervision, analyse de sécurité, documentation et support technique.</p>
           </div>
         </div>
       </div>
@@ -609,385 +210,86 @@
 
     <section id="competences">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Compétences techniques</h2></div>
-          <p>
-            Compétences acquises à travers les projets académiques, les exercices pratiques
-            Linux et la progression sur plateformes d’apprentissage cybersécurité.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Compétences techniques</h2><p>Compétences issues de mes formations, projets, labs TryHackMe et expériences pratiques.</p></div>
         <div class="grid-2">
-          <div class="card">
-            <h3>Programmation</h3>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">C</span>
-              <span class="tag">Java</span>
-              <span class="tag">R</span>
-              <span class="tag">SQL</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML / CSS</span>
-            </div>
-            <p style="margin-top:14px;">
-              Structuration modulaire de programmes, algorithmique, scripting
-              et logique de développement orientée outils techniques.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Systèmes</h3>
-            <div class="tags">
-              <span class="tag">Linux</span>
-              <span class="tag">Windows</span>
-              <span class="tag">CLI</span>
-              <span class="tag">Permissions</span>
-              <span class="tag">Fichiers</span>
-              <span class="tag">UTM</span>
-            </div>
-            <p style="margin-top:14px;">
-              Utilisation de la ligne de commande, gestion des fichiers et permissions,
-              notions de virtualisation et d’environnements de test.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Réseaux</h3>
-            <div class="tags">
-              <span class="tag">TCP/IP</span>
-              <span class="tag">Adressage IP</span>
-              <span class="tag">Client / Serveur</span>
-              <span class="tag">Fonctionnement réseau</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Outils / environnements</h3>
-            <div class="tags">
-              <span class="tag">Terminal Linux</span>
-              <span class="tag">Python scripting</span>
-              <span class="tag">R / R Shiny</span>
-              <span class="tag">TryHackMe</span>
-            </div>
-          </div>
+          <div class="card"><h3>Systèmes & outils</h3><div class="tags"><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">Active Directory</span><span class="tag">GPO</span><span class="tag">Docker</span><span class="tag">VirtualBox</span><span class="tag">VMware</span><span class="tag">UTM</span></div><p style="margin-top:14px;">Administration système, gestion utilisateurs/droits, services, virtualisation et environnements de test.</p></div>
+          <div class="card"><h3>Réseaux</h3><div class="tags"><span class="tag">TCP/IP</span><span class="tag">Routage</span><span class="tag">Sous-réseaux</span><span class="tag">LAN / WAN</span><span class="tag">Commutation</span><span class="tag">Subnetting</span><span class="tag">Notions Cisco CCNA 1</span></div></div>
+          <div class="card"><h3>Cybersécurité</h3><div class="tags"><span class="tag green">Wireshark</span><span class="tag green">Nmap</span><span class="tag green">TryHackMe +240 labs</span><span class="tag green">Reconnaissance</span><span class="tag green">Exploitation</span><span class="tag green">Défense</span><span class="tag green">Analyse réseau</span></div></div>
+          <div class="card"><h3>Programmation & IA</h3><div class="tags"><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">R</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Machine Learning</span><span class="tag">NLP</span></div></div>
         </div>
       </div>
     </section>
 
     <section id="projets">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Projets réalisés</h2></div>
-          <p>
-            Des projets académiques structurants qui montrent ma progression
-            en programmation, systèmes et logique technique.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Projets informatiques</h2><p>Projets académiques et personnels montrant ma progression technique.</p></div>
         <div class="grid-3">
-          <article class="project-card">
-            <div class="project-top">
-              <h3>Manipulation de polynômes</h3>
-              <span class="project-badge">R • 2023</span>
-            </div>
-            <p>
-              Module en langage R permettant de représenter, manipuler et exploiter
-              mathématiquement des polynômes à partir d’une représentation dense par vecteur.
-            </p>
-            <ul>
-              <li>Opérations algébriques de base</li>
-              <li>Évaluation numérique naïve et méthode de Horner</li>
-              <li>Visualisation du polynôme, dérivée et primitive</li>
-              <li>Travail sur algorithmique, performance et modularisation</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn btn-secondary" href="https://github.com/Ferati0/projet_R_polynome" target="_blank">Voir le projet</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <h3>Convertisseur de bases</h3>
-              <span class="project-badge">R / Shiny • 2023</span>
-            </div>
-            <p>
-              Application pédagogique permettant la conversion d’entiers entre plusieurs
-              systèmes de numération, avec interface interactive en Shiny.
-            </p>
-            <ul>
-              <li>Conversion base quelconque vers décimal</li>
-              <li>Conversion décimal vers base cible</li>
-              <li>Gestion des bases de 2 à 36</li>
-              <li>Implémentation du système bibi-binaire</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn btn-secondary" href="https://github.com/Ferati0/projet-R_ShinyBinare" target="_blank">Voir le projet</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <h3>Mini rsync</h3>
-              <span class="project-badge">Python / Linux • 2023-2024</span>
-            </div>
-            <p>
-              Version simplifiée de l’outil Unix rsync développée en Python afin
-              de comprendre les mécanismes de synchronisation de fichiers,
-              la logique client / serveur et les échanges entre processus.
-            </p>
-            <ul>
-              <li>Copie récursive et comparaison de fichiers</li>
-              <li>Synchronisation locale et réseau</li>
-              <li>Transfert incrémental par blocs</li>
-              <li>Sockets TCP, SSH et pipes</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn btn-secondary" href="https://github.com/Ferati0/mini-rsync" target="_blank">Voir le projet</a>
-            </div>
-          </article>
+          <article class="project-card"><div class="project-top"><h3>Mini rsync</h3><span class="project-badge">Python / Linux</span></div><p>Version simplifiée de rsync pour comprendre la synchronisation de fichiers locale et réseau.</p><ul><li>Synchronisation local & réseau</li><li>Utilisation de TCP / SSH</li><li>Comparaison de fichiers</li><li>Travail sur logique client/serveur</li></ul><div class="project-links"><a class="btn btn-secondary" href="https://github.com/Ferati0/mini-rsync" target="_blank">Voir le projet</a></div></article>
+          <article class="project-card"><div class="project-top"><h3>Convertisseur de bases</h3><span class="project-badge">R / Shiny</span></div><p>Application pédagogique de conversion d’entiers entre plusieurs systèmes de numération.</p><ul><li>Base quelconque vers décimal</li><li>Décimal vers base cible</li><li>Gestion des bases 2 à 36</li><li>Interface interactive Shiny</li></ul><div class="project-links"><a class="btn btn-secondary" href="https://github.com/Ferati0/projet-R_ShinyBinare" target="_blank">Voir le projet</a></div></article>
+          <article class="project-card"><div class="project-top"><h3>Manipulation de polynômes</h3><span class="project-badge">R</span></div><p>Module en R pour représenter, manipuler et visualiser des polynômes.</p><ul><li>Opérations algébriques</li><li>Évaluation numérique</li><li>Méthode de Horner</li><li>Visualisation, dérivée et primitive</li></ul><div class="project-links"><a class="btn btn-secondary" href="https://github.com/Ferati0/projet_R_polynome" target="_blank">Voir le projet</a></div></article>
         </div>
       </div>
     </section>
 
     <section id="experience">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Expérience professionnelle</h2></div>
-          <p>
-            Des expériences variées qui ont renforcé ma rigueur, mon sens de l’organisation,
-            ma capacité d’adaptation et mon esprit d’équipe.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Expériences professionnelles</h2><p>Des expériences qui renforcent ma rigueur, ma communication, mon adaptation et mon sens des responsabilités.</p></div>
         <div class="timeline">
-          <article class="timeline-card">
-            <div class="period">Été 2016 – Mars 2025</div>
-            <h3>Manœuvre en bâtiment — JLF Renov (CDD)</h3>
-            <ul>
-              <li>Interventions sur différents chantiers</li>
-              <li>Participation à des travaux variés : plaquiste, maçonnerie, carrelage, couverture, peinture</li>
-              <li>Accompagnement et formation de nouvelles recrues</li>
-            </ul>
-            <p style="margin-top:12px;">
-              Apports : sens du travail en équipe, adaptation rapide à différents contextes,
-              capacité à transmettre des consignes techniques.
-            </p>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">Juillet 2023 – Mai 2024</div>
-            <h3>Équipier polyvalent — Burger King (CDI)</h3>
-            <ul>
-              <li>Gestion des commandes</li>
-              <li>Maintien d’un service client de qualité</li>
-              <li>Formation des nouvelles recrues</li>
-            </ul>
-            <p style="margin-top:12px;">
-              Apports : efficacité en situation de pression, réactivité, organisation.
-            </p>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">2022 – 2024</div>
-            <h3>Juge-arbitre de tennis — All In Tennis Academy</h3>
-            <ul>
-              <li>Planification et gestion logistique de compétitions</li>
-              <li>Gestion des plannings</li>
-              <li>Médiation en cas de litiges ou tensions</li>
-            </ul>
-            <p style="margin-top:12px;">
-              Apports : sens de l’organisation, gestion de situations conflictuelles, prise de décision.
-            </p>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">2022 – 2023</div>
-            <h3>Éducateur tennis — All In Tennis Academy (Stage)</h3>
-            <ul>
-              <li>Encadrement de groupes d’adultes et d’enfants</li>
-              <li>Suivi des séances</li>
-              <li>Accompagnement hors compétition</li>
-            </ul>
-            <p style="margin-top:12px;">
-              Apports : pédagogie, communication, capacité d’encadrement, adaptation à différents profils.
-            </p>
-          </article>
+          <article class="timeline-card"><div class="period">Juin 2025 – Décembre 2025</div><h3>Militaire sous-officier — École Nationale des Sous-Officiers d’Active</h3><p>Spécialité SIC Informatique.</p><ul><li>Installation et paramétrage d’équipements poste radio</li><li>Responsabilités de chef de groupe</li><li>Discipline, rigueur et adaptation</li></ul></article>
+          <article class="timeline-card"><div class="period">Été 2016 – Mars 2025</div><h3>Manœuvre en bâtiment — JLF Renov</h3><ul><li>Travaux sur chantiers : plaquiste, maçonnerie, carrelage, couverture, peinture</li><li>Formation de nouvelles recrues aux procédures et normes de sécurité</li><li>Travail d’équipe et autonomie</li></ul></article>
+          <article class="timeline-card"><div class="period">2022 – 2023</div><h3>Éducateur tennis — All In Tennis Academy</h3><ul><li>Suivi et entraînement de groupes d’adultes et d’enfants</li><li>Pédagogie, communication et encadrement</li></ul></article>
+          <article class="timeline-card"><div class="period">2023</div><h3>Diplôme éducateur tennis & juge-arbitre</h3><ul><li>Organisation, gestion de planning et prise de décision</li><li>Gestion de groupes et situations variées</li></ul></article>
         </div>
       </div>
     </section>
 
     <section id="formation">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Formation</h2></div>
-          <p>
-            Un parcours structuré entre base scientifique, informatique universitaire
-            et spécialisation progressive vers la cybersécurité.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Formation</h2><p>Un parcours scientifique, informatique puis cybersécurité.</p></div>
         <div class="timeline">
-          <article class="timeline-card">
-            <div class="period">2026 – 2027</div>
-            <h3>Bachelor Cybersécurité — Ynov Campus Sophia Antipolis</h3>
-            <ul>
-              <li>Orientation : cybersécurité, systèmes, réseaux</li>
-              <li>Consolider les bases techniques en sécurité informatique</li>
-              <li>Documenter des projets concrets</li>
-              <li>Développer un profil cohérent pour l’alternance</li>
-            </ul>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">2022 – 2025</div>
-            <h3>Licence Sciences et Technologies — Informatique / Intelligence Artificielle</h3>
-            <ul>
-              <li>Acquisition de bases solides en informatique</li>
-              <li>Travail sur des projets de programmation</li>
-              <li>Développement de la logique algorithmique</li>
-              <li>Approche universitaire structurée</li>
-            </ul>
-            <p style="margin-top:12px;">Diplôme obtenu : DEUG Sciences et Technologies (2024)</p>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">2021 – 2022</div>
-            <h3>Double licence Mathématiques & Informatique</h3>
-            <ul>
-              <li>Consolidation des bases scientifiques</li>
-              <li>Développement de la rigueur</li>
-              <li>Renforcement des capacités d’analyse</li>
-              <li>Base utile pour logique, algorithmique et résolution de problèmes</li>
-            </ul>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">2025</div>
-            <h3>Formation militaire — École Nationale des Sous-Officiers d’Active</h3>
-            <p>Spécialité SIC Informatique</p>
-            <ul>
-              <li>Culture de la discipline</li>
-              <li>Rigueur</li>
-              <li>Capacité d’adaptation</li>
-              <li>Capacités à commander</li>
-            </ul>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">Progression visée</div>
-            <h3>Certifications / formation complémentaire</h3>
-            <ul>
-              <li>Pratique sur TryHackMe</li>
-              <li>Montée en compétence progressive en réseaux et sécurité</li>
-              <li>Intérêt pour des formations complémentaires réseaux / cybersécurité</li>
-              <li>Objectif de passer des certifications comme le CCNA ou CompTIA Security+ durant l’année 2026/2027</li>
-            </ul>
-          </article>
-
-          <article class="timeline-card">
-            <div class="period">Projection académique</div>
-            <h3>Trajectoire à moyen et long terme</h3>
-            <ul>
-              <li>Poursuite vers un Mastère Expert Cybersécurité</li>
-              <li>Développement d’un profil technique et académique cohérent</li>
-              <li>Préparation d’un dossier solide pour une candidature en Master 2 Informatique</li>
-              <li>Objectif visé : Master 2 Informatique Réseaux, parcours UBiNet, Université Côte d’Azur</li>
-            </ul>
-          </article>
+          <article class="timeline-card"><div class="period">2026 – 2027</div><h3>Bachelor Cybersécurité — Ynov Campus Sophia Antipolis</h3><ul><li>Préparation du titre RNCP 35594 — Administrateur systèmes, réseaux et bases de données</li><li>Orientation : cybersécurité, systèmes et réseaux</li></ul></article>
+          <article class="timeline-card"><div class="period">2022 – 2025</div><h3>Licence Sciences et Technologies — Informatique / IA</h3><ul><li>Informatique, algorithmique et programmation</li><li>Intelligence artificielle et machine learning</li><li>DEUG Sciences et Technologies obtenu en 2024</li></ul></article>
         </div>
       </div>
     </section>
 
     <section id="softskills">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Soft skills & centres d’intérêt</h2></div>
-          <p>
-            Des qualités construites à travers les études, les projets, les expériences professionnelles
-            et l’engagement sportif.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Soft skills & centres d’intérêt</h2><p>Des qualités construites par les études, les projets, le sport et les expériences professionnelles.</p></div>
         <div class="grid-2">
-          <div class="card">
-            <h3>Soft skills</h3>
-            <div class="tags">
-              <span class="tag">Discipline</span>
-              <span class="tag">Organisation</span>
-              <span class="tag">Persévérance</span>
-              <span class="tag">Esprit d’équipe</span>
-              <span class="tag">Capacité d’apprentissage</span>
-              <span class="tag">Sens des responsabilités</span>
-            </div>
-            <p style="margin-top:14px;">
-              Ces qualités ont été développées à travers mes études, mes projets techniques,
-              mes expériences professionnelles et mon engagement dans des activités sportives et d’encadrement.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Centres d’intérêt</h3>
-            <div class="tags">
-              <span class="tag">Informatique</span>
-              <span class="tag">Cybersécurité</span>
-              <span class="tag">Tennis</span>
-              <span class="tag">Musculation</span>
-              <span class="tag">Voyages</span>
-            </div>
-            <p style="margin-top:14px;">
-              Le sport occupe une place importante dans mon parcours personnel. Il m’a permis
-              de développer discipline, régularité, esprit de compétition et sens de l’engagement,
-              des qualités que je transpose aujourd’hui dans mes études et mes projets techniques.
-            </p>
-          </div>
+          <div class="card"><h3>Soft skills</h3><div class="tags"><span class="tag">Discipline</span><span class="tag">Réactivité</span><span class="tag">Organisation</span><span class="tag">Curiosité</span><span class="tag">Esprit d’équipe</span><span class="tag">Responsabilité</span></div></div>
+          <div class="card"><h3>Centres d’intérêt</h3><div class="tags"><span class="tag">Informatique</span><span class="tag">Cybersécurité</span><span class="tag">Tennis</span><span class="tag">Musculation</span><span class="tag">Voyages France & Europe</span></div></div>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <div class="section-title">
-          <div><h2>Contact</h2></div>
-          <p>
-            Disponible pour une alternance en cybersécurité, systèmes ou réseaux.
-          </p>
-        </div>
-
+        <div class="section-title"><h2>Contact</h2><p>Disponible pour une alternance en cybersécurité, systèmes ou réseaux.</p></div>
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Informations</h3>
             <div class="contact-list">
-              <div class="contact-item"><strong>Nom :</strong> <span>FERREIRA LEITE Maxence</span></div>
-              <div class="contact-item"><strong>Email :</strong> <a href="mailto:maxence.ferreiraleite@hotmail.com">maxence.ferreiraleite@hotmail.com</a></div>
-              <div class="contact-item"><strong>Téléphone :</strong> <span>06 73 75 36 17</span></div>
-              <div class="contact-item"><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/maxence-ferreira-leite" target="_blank">www.linkedin.com/in/maxence-ferreira-leite</a></div>
-              <div class="contact-item"><strong>GitHub :</strong> <a href="https://github.com/Ferati0/Maxence.FERREIRA_LEITE" target="_blank">Profil GitHub</a></div>
+              <div class="contact-item"><strong>Nom :</strong><span>FERREIRA LEITE Maxence</span></div>
+              <div class="contact-item"><strong>Email :</strong><a href="mailto:maxence.leite@hotmail.com">maxence.leite@hotmail.com</a></div>
+              <div class="contact-item"><strong>Téléphone :</strong><span>06 73 75 36 17</span></div>
+              <div class="contact-item"><strong>LinkedIn :</strong><a href="https://www.linkedin.com/in/maxence-ferreira-leite" target="_blank">www.linkedin.com/in/maxence-ferreira-leite</a></div>
+              <div class="contact-item"><strong>GitHub :</strong><a href="https://github.com/Ferati0/Maxence.FERREIRA_LEITE" target="_blank">Profil GitHub</a></div>
+              <div class="contact-item"><strong>Portfolio :</strong><a href="https://ferati0.github.io/Maxence.FERREIRA_LEITE/" target="_blank">ferati0.github.io/Maxence.FERREIRA_LEITE</a></div>
             </div>
-            <div class="divider"></div>
-            <p>Permis B — Véhiculé</p>
+            <div class="divider"></div><p>Permis B — Véhiculé</p>
           </div>
-
           <div class="contact-card">
             <h3>Message recruteur</h3>
-            <p>
-              Je recherche une alternance me permettant de progresser concrètement
-              sur des problématiques systèmes, réseaux et cybersécurité.
-              Mon objectif est de rejoindre une équipe où je peux apprendre rapidement,
-              contribuer sérieusement et développer à la fois mes compétences professionnelles
-              et théoriques.
-            </p>
-            <div class="project-links" style="margin-top:18px;">
-              <a class="btn btn-primary" href="mailto:maxence.ferreiraleite@hotmail.com">Envoyer un email</a>
-              <a class="btn btn-secondary" href="https://www.linkedin.com/in/maxence-ferreira-leite" target="_blank">LinkedIn</a>
-            </div>
+            <p>Je recherche une alternance de 12 mois pour contribuer à des missions concrètes en cybersécurité, systèmes et réseaux. Mon objectif est d’apprendre rapidement, de documenter sérieusement mon travail et de devenir opérationnel dans une équipe technique.</p>
+            <div class="project-links" style="margin-top:18px;"><a class="btn btn-primary" href="mailto:maxence.leite@hotmail.com">Envoyer un email</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/maxence-ferreira-leite" target="_blank">LinkedIn</a></div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    © 2026 Maxence Ferreira Leite — Portfolio Informatique / Cybersécurité
-  </footer>
+  <footer>© 2026 Maxence Ferreira Leite — Portfolio Cybersécurité / Systèmes & Réseaux</footer>
 </body>
 </html>
+
