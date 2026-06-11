@@ -1,84 +1,168 @@
-# Portfolio — Maxence Ferreira Leite
+# Portfolio - Maxence Ferreira Leite
 
-Portfolio personnel de **Maxence Ferreira Leite**, étudiant en **Bachelor Cybersécurité** à Ynov Campus Sophia Antipolis, à la recherche d'une **alternance en cybersécurité, systèmes et réseaux**.
+Portfolio personnel de Maxence Ferreira Leite, étudiant en informatique orienté Data, Développement IA et développement logiciel.
 
-## Objectif
+## Profil
 
-Ce site présente mon profil, mes compétences techniques, mes projets informatiques, mes expériences professionnelles et ma formation.
+Étudiant en Bachelor Informatique - Développement, je suis spécialisé en développement Python, analyse de données et intelligence artificielle.
 
-## Aperçu du contenu
+Je recherche une alternance orientée :
 
-- Présentation du profil cybersécurité / systèmes / réseaux
-- Compétences : Linux, Windows, Active Directory, Docker, virtualisation, TCP/IP, Wireshark, Nmap, TryHackMe, Python, Bash, R, Java, C, IA / Machine Learning
-- Projets : Mini rsync, Convertisseur de bases, Manipulation de polynômes
-- Expériences : formation militaire SIC Informatique, bâtiment, éducateur tennis
-- Formation : Bachelor Cybersécurité, Licence Sciences et Technologies informatique / IA
-- Contact et liens professionnels
+- Développement logiciel
+- Data analyse
+- Intelligence artificielle
+- Bases de données
+- Business Intelligence
+- Aide à la décision
 
-## Technologies utilisées
+## Formation
 
-- HTML5
-- CSS3
-- Responsive design
-- GitHub Pages
+### 2026 - 2027
 
-## Structure du projet
+Bachelor Informatique - Développement
 
-```text
-.
-├── index.html
-├── README.md
-├── photocv.jpg
-└── CV_FerreiraLeite_Maxence_IA&cybersecurity.pdf
-```
+RNCP36463 - Concepteur développeur d'applications numériques
 
-## Installation locale
+### 2022 - 2025
 
-1. Cloner le dépôt :
+Licence Sciences et Technologies - Informatique et IA
 
-```bash
-git clone https://github.com/Ferati0/Maxence.FERREIRA_LEITE.git
-```
+### 2024
 
-2. Entrer dans le dossier :
+Obtention du DEUG Sciences et Technologies
 
-```bash
-cd Maxence.FERREIRA_LEITE
-```
+## Compétences techniques
 
-3. Ouvrir `index.html` dans un navigateur.
+### Data & Business Intelligence
 
-## Déploiement GitHub Pages
+- SQL
+- Analyse de données
+- Power BI
+- Excel
+- Classification
+- Clustering
+- Apprentissage supervisé
+- Apprentissage non supervisé
 
-1. Aller dans les paramètres du dépôt GitHub.
-2. Ouvrir l'onglet **Pages**.
-3. Sélectionner la branche `main`.
-4. Sélectionner le dossier `/root`.
-5. Valider.
+### Programmation & bases de données
 
-Le portfolio sera disponible à l'adresse :
+- Python
+- R
+- SQL
+- NoSQL
+- Bash
+- Java
+- C
 
-```text
-https://ferati0.github.io/Maxence.FERREIRA_LEITE/
-```
+### Développement & algorithmique
 
-## À personnaliser
+- Programmation orientée objet Java
+- Programmation fonctionnelle R
+- Structures de données
+- Complexité algorithmique
+- Architecture client/serveur
+- Sockets TCP
 
-Avant publication, vérifier que les fichiers suivants sont bien présents dans le dépôt :
+### Outils & environnements
 
-- `photocv.jpg`
-- `CV_FerreiraLeite_Maxence_IA&cybersecurity.pdf`
+- Git
+- Docker
+- VMware
+- VirtualBox
+- Linux Ubuntu
+- Linux Debian
+- Linux Kali
+- Windows
 
-Si le nom du CV est différent, modifier le lien dans `index.html` :
+### Systèmes & réseaux
 
-```html
-<a class="btn btn-secondary" href="CV_FerreiraLeite_Maxence_IA&cybersecurity.pdf" target="_blank">Télécharger mon CV</a>
-```
+- Linux
+- Windows
+- Active Directory
+- Gestion utilisateurs/droits
+- TCP/IP
+- VLAN
+- Subnetting
+- DHCP
+- DNS
+- LAN/WAN
+- Cisco CCNA partie 1
+
+### Cybersécurité
+
+- Wireshark
+- Nmap
+- TryHackMe +240 labs
+- Analyse réseau
+- Reconnaissance
+- Scan réseau
+
+## Projets
+
+### Mini rsync
+
+Projet développé en Python et Linux.
+
+Fonctionnalités principales :
+
+- Synchronisation locale et distante de fichiers
+- Architecture client/serveur avec sockets TCP et SSH
+- Transfert différentiel par blocs avec hash SHA1
+- Gestion de processus UNIX, pipes et modules séparés
+
+Lien : https://github.com/Ferati0/mini-rsync
+
+### Structures de données & calcul scientifique
+
+Projet réalisé en R.
+
+Objectifs :
+
+- Développement de fonctions de calcul polynomial
+- Manipulation algorithmique de structures mathématiques
+- Génération et visualisation de courbes/fonctions
+
+Lien : https://github.com/Ferati0/projet_R_polynome
+
+## Expériences professionnelles
+
+### Juin 2025 - Décembre 2025
+
+Élève sous-officier - Armée de Terre
+
+- Travail en environnement exigeant
+- Discipline, rigueur et gestion du stress
+- Travail d'équipe et leadership
+
+### Été 2016 - Mars 2025
+
+Manœuvre en bâtiment - JLF Renov
+
+- Interventions sur chantiers
+- Formation des recrues aux procédures et normes de sécurité
+- Travail d'équipe, autonomie et adaptation
+
+## Langues
+
+- Français : langue maternelle
+- Anglais : B1/B2
 
 ## Contact
 
 - Email : maxence.leite@hotmail.com
-- LinkedIn : www.linkedin.com/in/maxence-ferreira-leite
-- GitHub : https://github.com/Ferati0/Maxence.FERREIRA_LEITE
+- Téléphone : 06 19 20 46 67
+- LinkedIn : https://www.linkedin.com/in/maxence-ferreira-leite
+- GitHub : https://github.com/Ferati0
 - Portfolio : https://ferati0.github.io/Maxence.FERREIRA_LEITE/
+
+## Déploiement GitHub Pages
+
+Structure recommandée du dépôt :
+
+```txt
+Maxence.FERREIRA_LEITE/
+├── index.html
+├── README.md
+├── photocv.jpg
+└── CV_FERREIRA_LEITE_Maxence_DATA.pdf
 
